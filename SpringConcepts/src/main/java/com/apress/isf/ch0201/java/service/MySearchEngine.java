@@ -47,6 +47,16 @@ public class MySearchEngine implements SearchEngine {
 		aDoc.setLocation("https://spring.io/");
 		result.add(aDoc);
 		
+		aType = new Type();
+		aType.setName("NOTE");
+		aType.setDesc("Text Notes");
+		aType.setExtension(".txt");
+         
+        aDoc = new Document();
+        aDoc.setName("Clustering with RabbitMQ");
+        aDoc.setType(aType);
+        aDoc.setLocation("/Users/felipeg/Documents/Random/Clustering with RabbitMQ.txt");
+        result.add(aDoc);
 		
 		return result;
 	}

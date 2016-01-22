@@ -41,7 +41,7 @@ public class MyDocumentsWithSpringTest {
 	public void testListAll() {		
 		List<Document> documents = engine.listAll();
 		assertNotNull(documents);
-		assertEquals(2, documents.size());
+		assertEquals(3, documents.size());
 	}
 	
 
