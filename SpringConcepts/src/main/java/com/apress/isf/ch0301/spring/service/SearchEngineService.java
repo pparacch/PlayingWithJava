@@ -19,7 +19,7 @@ public class SearchEngineService implements SearchEngine {
 	private DocumentDAO documentDAO;
 	
 	public SearchEngineService(){
-		logger.log(Level.INFO, "SearchEngineService created: " + this);
+		logger.log(Level.INFO, "<SearchEngineService><emptyConstructor>: " + this);
 	}
 	
 	public DocumentDAO getDocumentDAO() {
@@ -27,8 +27,9 @@ public class SearchEngineService implements SearchEngine {
 	}
 
 	public void setDocumentDAO(DocumentDAO documentDAO) {
-		logger.log(Level.INFO, "Document DAO set: " + documentDAO);
+		logger.log(Level.INFO, "Start <setDocumentDAO> Params: " + documentDAO);
 		this.documentDAO = documentDAO;
+		logger.log(Level.INFO, "End <setDocumentDAO> Result: ");
 	}
 
 	public List<Document> findByType(Type documentType) {
